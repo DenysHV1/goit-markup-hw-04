@@ -167,7 +167,7 @@ img {
 }
 
 .ws-order {
-  background-image: url(/images/Dark-bg.png), url(/images/people-office\ 1.jpg);
+  background-image: url(../images/Dark-bg.png), url(../images/people-office\ 1.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
