@@ -1,0 +1,530 @@
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  line-height: 1.5;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+img {
+  display: block;
+}
+
+/* <!--~~~~~~~~~~~~~~~~~~~~~Header~~~~~~~~~~~~~~~~~~~~~~~~--> */
+.web-studio-header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ws-header-inner-nav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 0;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 40px;
+  margin: 0;
+}
+
+.header-nav-item {
+  width: calc((100% - 80px) / 3);
+}
+
+.ws-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  flex-shrink: 0;
+  margin-right: 76px;
+}
+
+.logo-span {
+  color: #2e2f42;
+}
+
+.ws-header-inner-contacts {
+  flex-shrink: 0;
+}
+
+.nav-item__link {
+  font-weight: 500;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
+}
+
+.nav-item__link--border {
+  color: #404bbf;
+  position: relative;
+}
+
+.nav-item__link--border::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-item__link:hover {
+  color: #404bbf;
+}
+
+.nav-item__link:active {
+  color: #404bbf;
+}
+
+.nav-item__link:focus {
+  color: #404bbf;
+}
+
+.ws-header-inner-contacts {
+  font-style: normal;
+}
+
+.contact-item {
+  width: calc((100% - 40px) / 2);
+  flex-shrink: 0;
+}
+
+.contact-item__link {
+  color: #434455;
+  letter-spacing: 0.02em;
+}
+
+.contact-item__link:hover {
+  color: #404bbf;
+}
+
+.contact-item__link:focus {
+  color: #404bbf;
+}
+
+/* <!--~~~~~~~~~~~~~~~~~~~~~Main~~~~~~~~~~~~~~~~~~~~~~~~--> */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: 100%;
+}
+
+/* <!-- first section "ws-order" --> */
+.ws-order-inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ws-order {
+  background-image: url(/images/Dark-bg.png), url(/images/people-office\ 1.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: cover, cover;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  width: 100%;
+}
+
+.home-page__title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  max-width: 496px;
+  margin-bottom: 48px;
+}
+
+.order__button {
+  background: #4d5ae5;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+}
+
+.order__button:hover {
+  background-color: #404bbf;
+}
+
+.order__button:active {
+  background-color: #404bbf;
+}
+
+.order__button:focus {
+  background-color: #404bbf;
+}
+
+/* <!-- Second section "ws-offer-for-users" --> */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.offer-list-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 24px;
+  margin: 0;
+}
+
+.offer-list-text {
+  max-width: 264px;
+}
+
+/* іконки для другої секції */
+.studio-svg {
+  width: 64px;
+  height: 64px;
+}
+
+.studio-svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+/* іконки для другої секції */
+
+.offer-list__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.offer-list__text {
+  letter-spacing: 0.02em;
+}
+
+/* <!-- ///////////////Third section "WS-TEAM"/////////// --> */
+
+/* селектор для секції */
+.ws-team {
+  background-color: #f4f4fd;
+}
+
+/* допоміжний селектор для контейнера */
+.ws-team-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+
+/* список */
+.team-list {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 24px;
+}
+
+/* один із блоків списку */
+.team-list-item {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
+}
+
+/* заголовок третьої секції */
+.team-list__title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+/* контейнер для заголовку списку і параграфа */
+.team-div-for-text {
+  padding: 32px 0;
+}
+
+/* картинка в середині списку */
+.team-item__img {
+  max-width: 100%;
+}
+
+/* заголовок всередині списку */
+.team-item__name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+/* параграф в середині списку */
+.team-item__profession {
+  text-align: center;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+  margin-bottom: 8px;
+}
+
+/* svg-icons */
+.team-socials-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.socials__href {
+  display: block;
+  max-height: 40px;
+}
+.social-svg {
+  max-width: 40px;
+  max-height: 40px;
+}
+/* svg-icons */
+
+/* <!-- ///////////////the four section "Our PORTFOLIO"/////////// --> */
+
+/* допоміжний клас для головного контейнера  */
+.portfolio-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* список */
+.our-portfolio-list {
+  display: flex;
+  align-items: top;
+  gap: 48px 24px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+/* один із блоків списку */
+.our-portfolio-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.our-portfolio-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-container__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+
+/* контейнер для заголовку списку і параграфа */
+.portfolio-div-for-text {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+/* заголовок четвертої секції */
+.our-portfolio__title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+/* картинка в середині списку */
+.our-portfolio-item__img {
+  max-width: 100%;
+}
+
+.box {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-container-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 40px;
+  width: 360px;
+  height: 300px;
+  background-color: #4d5ae5;
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.box:hover .portfolio-container-text {
+  transform: translatey(0);
+}
+
+/* заголовок всередині списку */
+.our-portfolio-item__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+/* параграф в середині списку */
+.our-portfolio-item__text {
+  letter-spacing: 0.02em;
+}
+
+/* <!--~~~~~~~~~~~~~~~~~~~~~Footer~~~~~~~~~~~~~~~~~~~~~~~~--> */
+.footer-inner {
+  display: flex;
+  align-items: start;
+  gap: 120px;
+}
+.web-studio-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.web-studio-footer {
+  background-color: #2e2f42;
+}
+
+.footer-left-info__text {
+  color: #f4f4fd;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+}
+
+.footer-logo__span {
+  color: #f4f4fd;
+}
+
+.ws-logo-footer {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  flex-shrink: 0;
+  margin-bottom: 16px;
+}
+
+.footer-inner-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.footer-socials-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.footer-socials-list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.footer-socials-href {
+  display: block;
+  max-height: 40px;
+}
+.footer-social__svg {
+  max-width: 40px;
+  max-height: 40px;
+}
